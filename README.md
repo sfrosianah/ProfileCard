@@ -1,6 +1,6 @@
 # Profile Card 
 
-A simple and elegant profile card built using **HTML + CSS**, designed with a clean dark theme and modern aesthetic.  
+A simple profile card built using **HTML + CSS**, designed with a clean dark theme and modern aesthetic.  
 
 # Preview
 ![Preview](img/preview.png)
