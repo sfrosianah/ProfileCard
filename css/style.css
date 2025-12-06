@@ -1,0 +1,134 @@
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0b0b0d, #1c152d, #0d0d12);
+}
+.profile-card {
+    background: #1f1b3d;
+    width: 320px;
+    border-radius: 18px;
+    padding: 25px;
+    color: #eee;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+    transition: 0.3s ease;
+}
+.profile-img {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.profile-img img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: 50% 10%;
+    border-radius: 50%;
+    border: 2px solid #fffb;
+}
+.profile-card h3 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+.small-text {
+    font-size: 13px;
+    color: #fff;
+}
+.location-text {
+    font-size: 13px;
+}
+.location-link {
+    color: #d7d7ff;
+    text-decoration: none;
+}
+.location-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.skills {
+    margin-top: 18px;
+}
+.skills-list {
+    font-size: 13px;
+    color: #d8d8d8;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/*sosial media*/
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #ffffff22;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.btn-social:hover {
+    background: #ffffff44;
+    transform: translateY(-3px);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 90%;
+        padding: 20px;
+    }
+    .profile-img img {
+        width: 110px;
+        height: 110px;
+    }
+    .profile-card h3 {
+        font-size: 18px;
+    }
+    .profile-card p {
+        font-size: 12px;
+    }
+    .btn-social {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+    .skills-list {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+        display: block;
+    }
+    .profile-card {
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 16px;
+    }
+    .profile-img img {
+        width: 100px;
+        height: 100px;
+    }
+    .btn-social {
+        width: 34px;
+        height: 34px;
+        font-size: 16px;
+    }
+    .skills h6 {
+        font-size: 13px;
+    }
+    .skills-list {
+        font-size: 11px;
+    }
+}
